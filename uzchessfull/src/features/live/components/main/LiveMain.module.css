@@ -1,0 +1,35 @@
+.main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+}
+
+.liveSection {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 1026px;
+    height: 654px;
+    border-radius: 12px;
+    border: 1px solid #1F272A;
+    background-color: #1A1D1F;
+
+    h1 {
+        font-family: poppins, sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #F7F9FA;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.bannerSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}

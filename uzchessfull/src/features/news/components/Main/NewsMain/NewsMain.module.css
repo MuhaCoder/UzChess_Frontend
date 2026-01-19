@@ -1,0 +1,114 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 22px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1026px;
+    height: 52px;
+
+    h1 {
+        font-family: poppins, sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: #F7F9FA;
+        line-height: 130%;
+    }
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    column-gap: 6px;
+    width: 326px;
+    height: 52px;
+    border-radius: 8px;
+    border: 1px solid #232627;
+    background-color: #15181A;
+    padding: 14px 16px;
+    transition: width 0.9s ease-in-out;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        color: #F7F9FA;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.active {
+    border: 1px solid #1C92E0;
+    width: 600px;
+}
+
+.section {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    width: 1026px;
+    height: 1076px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.buttonCover {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: center;
+
+    button {
+        width: 131px;
+        height: 40px;
+        border-radius: 8px;
+        background-color: #1A1D1F;
+        border: none;
+        outline: none;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #EFEFEF;
+
+        &:active {
+            transform: scale(98%);
+        }
+
+        &:hover {
+            background-color: #1C92E0;
+            cursor: pointer;
+        }
+    }
+}
+
+.nothing {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: center;
+}
+.bannerContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}

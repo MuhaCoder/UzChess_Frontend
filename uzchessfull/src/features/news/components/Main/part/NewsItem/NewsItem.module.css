@@ -1,0 +1,45 @@
+.itemCover {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    width: 326px;
+    height: 251px;
+    border-radius: 8px;
+    background-color: #1A1D1F;
+
+    &:hover {
+        h6 {
+            cursor: pointer;
+            color: #1C92E0;
+        }
+    }
+
+    img {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    span {
+        margin-top: 7px;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(247, 249, 250, 0.4);
+    }
+
+    h6 {
+        margin-top: 6px;
+        font-family: Inter, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #F7F9FA;
+    }
+
+    p {
+        margin-top: 8px;
+        font-family: Inter, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #9DA1A3;
+    }
+}

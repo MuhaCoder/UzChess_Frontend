@@ -1,0 +1,122 @@
+.match {
+    position: relative;
+    width: 100%;
+    height: 72px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 656px;
+        height: 1px;
+        background-color: #272B30;
+    }
+}
+
+.playerName {
+    width: 209px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 4px;
+
+    span {
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FCFCFC;
+    }
+}
+
+.pointsContainer {
+    width: 92px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+
+    span {
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #6F767E;
+    }
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    width: 60px;
+
+    span {
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FCFCFC;
+    }
+}
+.typeContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 4px;
+    width: 110px;
+}
+
+.Bullet {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #82CC27;
+}
+
+.Blitz {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #E0B531;
+}
+
+.Rapid {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #DC2D2D;
+}
+.gameHod{
+    width: 78px;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FCFCFC;
+}
+.data{
+    width: 88px;
+    text-align: end;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FCFCFC;
+}
+.dark {
+    background: #15181A;
+}
+
+.light {
+    background: #1A1D1F;
+}
+.noneBorder{
+    &::after{
+        width: 0;
+    }
+}

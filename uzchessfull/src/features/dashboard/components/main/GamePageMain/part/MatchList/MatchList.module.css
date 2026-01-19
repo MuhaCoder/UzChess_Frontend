@@ -1,0 +1,111 @@
+.mainContainer{
+    position: relative;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 84px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 98%;
+        height: 1px;
+        background-color: #272B30;
+    }
+
+    span{
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #F7F9FA;
+    }
+}
+
+.dark{
+    background-color: #15181A;
+}
+
+.Bullet {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #82CC27;
+}
+
+.Blitz {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #E0B531;
+}
+
+.Rapid {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #DC2D2D;
+}
+
+.number{
+    margin-top: 14px;
+    width: 38px;
+}
+
+.nameContainer{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 299px;
+    height: 56px;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.rating{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 124px;
+    height: 56px;
+}
+
+.result{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 102px;
+    height: 56px;
+}
+
+.gameType{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 4px;
+    width: 156px;
+    height: 24px;
+}
+
+.gameHod{
+    margin-top: 33px;
+    width: 132px;
+    height: 24px;
+}
+
+.gameDate{
+    margin-top: 33px;
+    width: 143px;
+    height: 24px;
+}

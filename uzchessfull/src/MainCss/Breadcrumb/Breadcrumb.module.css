@@ -1,0 +1,21 @@
+.container{
+    padding: 12px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 8px;
+    width: 98vw;
+    height: 44px;
+    .gray{
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #6D7274;
+    }
+    .white{
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #F7F9FA;
+    }
+}

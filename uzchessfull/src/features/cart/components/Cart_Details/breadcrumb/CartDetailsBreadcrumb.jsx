@@ -1,0 +1,17 @@
+import crumb from "../../../../../MainCss/Breadcrumb/Breadcrumb.module.css";
+import {Link} from "react-router-dom";
+
+export default function CartDetailsBreadcrumb({info}){
+    return(
+        <>
+            <div className={crumb.container}>
+                <img src={info.icon} alt={info.alt}/>
+                <Link className={crumb.gray} to='/'>{info.main}</Link>
+                <img src={info.chess} alt={info.alt}/>
+                <Link className={crumb.gray} to='/cart'>{info.cart}</Link>
+                <img src={info.chess} alt={info.alt}/>
+                <Link className={crumb.white} to='/cart/details'>{info.cartDetails}</Link>
+            </div>
+        </>
+    )
+}

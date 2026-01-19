@@ -1,0 +1,115 @@
+dialog {
+    margin: 80px auto;
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    &::backdrop {
+        background-color: rgba(12, 14, 15, 0.94);
+    }
+}
+
+.dialogContainer{
+    display: flex;
+    flex-direction: column;
+    width: 958px;
+    height: 838px;
+}
+
+.imageCover{
+    margin-left: 371px;
+    width: 169px;
+    height: 42px;
+}
+
+.closeBtn{
+    margin-top: 64px;
+    margin-left: 918px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #1A1D1F;
+    cursor: pointer;
+
+    &:active{
+        transform: scale(98%);
+    }
+}
+
+.dialogMain{
+    margin-top: 8px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 910px;
+    height: 597px;
+    border-radius: 12px;
+    border: 1px solid #1E262A;
+    background-color: #1A1D1F;
+    overflow: clip;
+}
+
+.infoSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 419px;
+
+    img{
+        margin-top: 64px;
+        width: 295px;
+        height: 224px;
+    }
+
+    h1{
+        margin-top: 24px;
+        font-family: poppins, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #F7F9FA;
+        text-align: center;
+    }
+
+    p{
+        margin-top: 12px;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #9DA1A3;
+        text-align: center;
+    }
+}
+
+.logIn{
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 419px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #1C92E0;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #F7F9FA;
+}
+
+.signUp{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 419px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #F7F9FA;
+}

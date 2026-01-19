@@ -1,0 +1,122 @@
+.main{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    width: 326px;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px solid #232627;
+    background-color: #1A1D1F;
+    overflow: clip;
+    cursor: pointer;
+    &:active{
+        transform: scale(98%);
+    }
+    img{
+        filter: drop-shadow(0 0 26px #1C92E0);
+    }
+    h1{
+        font-family: poppins, sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: #F7F9FA;
+    }
+}
+.filter{
+    margin-top: 24px;
+    padding: 20px;
+    width: 334px;
+    height: 520px;
+    border-radius: 8px;
+    background-color: #1A1D1F;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FCFCFC;
+    }
+    span{
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #1C92E0;
+        cursor: pointer;
+    }
+}
+.filterContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top: 24px;
+    span{
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: rgba(247, 249, 250, 0.6);
+    }
+}
+.searchAndBooks{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-left: 17px;
+}
+.searchContainer{
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 6px;
+    width: 676px;
+    height: 52px;border-radius: 12px;
+    border: 1px solid #232627;
+    background-color: #15181A;
+    input{
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #F7F9FA;
+    }
+}
+.bookContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.nothing{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: center;
+}
+.searchActive{
+    outline: 1px solid #1C92E0;
+}
+.banner{
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.bannerImage{
+    width: 326px;
+}
+.input{
+
+}

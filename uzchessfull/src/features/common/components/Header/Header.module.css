@@ -1,0 +1,185 @@
+.header {
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 24px;
+    width: 98vw;
+    height: 76px;
+    border-radius: 16px;
+    background-color: #1A1D1F;
+
+    .image {
+        height: 40px;
+        width: 104px;
+        margin-bottom: 8px;
+    }
+}
+
+.headerLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.line {
+    width: 1px;
+    height: 24px;
+    background-color: #3D4549;
+}
+
+.lineContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+
+    section {
+        margin-top: 5px;
+    }
+}
+
+.signUp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.logoContainer {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.signIn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    width: 132px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #1C92E0;
+    cursor: pointer;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #EFEFEF;
+
+    &:active {
+        transform: scale(98%);
+    }
+}
+
+.langSelect {
+    position: relative;
+    display: inline-block;
+}
+
+.langBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 8px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    font-size: 15px;
+    font-family: poppins, sans-serif;
+    cursor: pointer;
+}
+
+.langDropdown {
+    position: absolute;
+    left: -15px;
+    margin-top: 4px;
+    width: 150px;
+    background-color: #1A1D1F;
+    border: 1px solid #232B2F;
+    border-radius: 8px;
+    padding: 4px 0;
+}
+
+.langItem {
+    padding: 10px 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background 0.15s;
+    font-size: 15px;
+    font-family: poppins, sans-serif;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.arrowUp {
+    transform: rotate(180deg);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+
+.bottomLine {
+    position: relative;
+    padding-bottom: 8px;
+
+    .a {
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #F7F9FA;
+        opacity: 70%;
+        transition: color 0.3s ease, opacity 0.3s ease-in-out;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        border-radius: 1px;
+        background-color: #1C92E0;
+        transition: width 0.3s ease-in-out;
+    }
+}
+
+.bottomLine.active .a {
+    color: #F7F9FA;
+    opacity: 100%;
+}
+
+.bottomLine.active::after {
+    width: 100%;
+}
+
+.a:hover {
+    color: #1C92E0;
+}
+
+.cancel {
+    width: 24px;
+    height: 24px;
+}

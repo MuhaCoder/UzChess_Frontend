@@ -1,0 +1,308 @@
+.main{
+    margin-top: 12px;
+    margin-bottom: 210px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailsSection{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 909px;
+    height: 331px;
+    border-radius: 12px;
+    border: 1px solid #1F272A;
+    background-color: #1A1D1F;
+
+    .h1{
+        font-family: poppins, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #F7F9FA;
+    }
+}
+
+.inputCover{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 420px;
+    height: 71px;
+
+    p{
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: #9DA1A3;
+    }
+
+    input{
+        padding-left: 16px;
+        width: 420px;
+        height: 44px;
+        border-radius: 8px;
+        border: 1px solid #36393B;
+        background-color: #13181C;
+        outline: none;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #F7F9FA;
+    }
+}
+
+.numberInput{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 420px;
+    height: 71px;
+
+    p{
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: #9DA1A3;
+    }
+}
+
+.inputContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #36393B;
+    overflow: clip;
+    border-radius: 8px;
+
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 66px;
+        height: 44px;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #F7F9FA;
+    }
+
+    input{
+        padding-left: 8px;
+        padding-top: 2px;
+        width: 354px;
+        height: 44px;
+        background-color: #13181C;
+        border: none;
+        outline: none;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #F7F9FA;
+        appearance: textfield;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+}
+
+.btnContainer{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 20px;
+}
+
+.btnCancel{
+    width: 201px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F7F9FA;
+}
+
+.btnAgree{
+    width: 201px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: #1C92E0;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F7F9FA;
+}
+
+.terminalSection{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 20px;
+    width: 443px;
+    height: 405px;
+    border-radius: 16px;
+    border: 1px solid #1F272A;
+    background-color: rgba(11, 20, 24, 0.8);
+}
+
+.total{
+    position: relative;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 26px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        width: 423px;
+        height: 1px;
+        background-color: #1D2529;
+    }
+
+    p{
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    span{
+        font-family: poppins, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+}
+
+.deliveryContainer{
+    position: relative;
+    margin-top: 33px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 100%;
+    height: 56px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        width: 423px;
+        height: 1px;
+        background-color: #1D2529;
+    }
+}
+
+.cashCover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p{
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    span{
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+}
+
+.hasBorder{
+    position: relative;
+    margin-top: 33px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        width: 423px;
+        height: 1px;
+        background-color: #1D2529;
+    }
+
+    p{
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    span{
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+}
+
+.discountContainer{
+    margin-top: 33px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 100%;
+    height: 88px;
+}
+
+.infoContainer{
+    margin-top: 16px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    width: 403px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid #1D2529;
+
+    p{
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        color: rgba(159, 162, 164, 0.2);
+    }
+}
+
+.imageBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.12);
+}
