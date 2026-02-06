@@ -1,5 +1,5 @@
 import './App.css';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createHashRouter, RouterProvider} from "react-router-dom";
 import RootPage from "./features/common/pages/RootPage/RootPage.jsx";
 import Dashboard from "./features/dashboard/pages/Dashboard/Dashboard.jsx";
 import News from "./features/news/pages/News/News.jsx";
@@ -14,20 +14,20 @@ import LivePage from "./features/live/page/LivePage/LivePage.jsx";
 import RatingPage from "./features/dashboard/pages/RatingPage/RatingPage.jsx";
 import GamePage from "./features/dashboard/pages/GamePage/GamePage.jsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
-        path: '/UzChess_Frontend', element: <RootPage/>, children: [
+        path: '/', element: <RootPage/>, children: [
             {index: true, element: <Dashboard/>},
-            {path: '/rating', element: <RatingPage/>},
-            {path: '/game', element: <GamePage/>},
-            {path: '/news', element: <News/>},
-            {path: '/library', element: <Library/>},
-            {path: '/library/single', element: <LibrarySingle/>},
-            {path: '/courses', element: <Courses/>},
-            {path: '/contact', element: <Contact/>},
-            {path: '/cart', element: <Cart/>},
-            {path: '/cart/details', element: <CartDetails/>},
-            {path: '/live', element: <LivePage/>},
+            {path: 'rating', element: <RatingPage/>},
+            {path: 'game', element: <GamePage/>},
+            {path: 'news', element: <News/>},
+            {path: 'library', element: <Library/>},
+            {path: 'library/single', element: <LibrarySingle/>},
+            {path: 'courses', element: <Courses/>},
+            {path: 'contact', element: <Contact/>},
+            {path: 'cart', element: <Cart/>},
+            {path: 'cart/details', element: <CartDetails/>},
+            {path: 'live', element: <LivePage/>},
             {path: '*', element: <ErrorPage/>}
         ]
     },
