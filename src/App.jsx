@@ -16,18 +16,18 @@ import GamePage from "./features/dashboard/pages/GamePage/GamePage.jsx";
 
 const router = createHashRouter([
     {
-        path: '/UzChess_Frontend/', element: <RootPage/>, children: [
+        path: '/UzChess_Frontend', element: <RootPage/>, children: [
             {index: true, element: <Dashboard/>},
-            {path: 'rating', element: <RatingPage/>},
-            {path: 'game', element: <GamePage/>},
-            {path: 'news', element: <News/>},
-            {path: 'library', element: <Library/>},
-            {path: 'library/single', element: <LibrarySingle/>},
-            {path: 'courses', element: <Courses/>},
-            {path: 'contact', element: <Contact/>},
-            {path: 'cart', element: <Cart/>},
-            {path: 'cart/details', element: <CartDetails/>},
-            {path: 'live', element: <LivePage/>},
+            {path: '/rating', element: <RatingPage/>},
+            {path: '/game', element: <GamePage/>},
+            {path: '/news', element: <News/>},
+            {path: '/library', element: <Library/>},
+            {path: '/library/single', element: <LibrarySingle/>},
+            {path: '/courses', element: <Courses/>},
+            {path: '/contact', element: <Contact/>},
+            {path: '/cart', element: <Cart/>},
+            {path: '/cart/details', element: <CartDetails/>},
+            {path: '/live', element: <LivePage/>},
             {path: '*', element: <ErrorPage/>}
         ]
     },
