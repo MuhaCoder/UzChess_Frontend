@@ -16,7 +16,7 @@ import GamePage from "./features/dashboard/pages/GamePage/GamePage.jsx";
 
 const router = createHashRouter([
     {
-        path: '/UzChess_Frontend/', element: <RootPage/>, children: [
+        path: '/', element: <RootPage/>, children: [
             {index: true, element: <Dashboard/>},
             {path: '/rating', element: <RatingPage/>},
             {path: '/game', element: <GamePage/>},
